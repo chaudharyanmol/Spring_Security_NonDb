@@ -55,7 +55,7 @@ public class MyJavaConfig {
 
 	        UserDetails admin = User.withUsername("shrishti") 
 	                .password("{noop}1234") 
-	                .roles("ADMIN") // ✅ Assigning role
+	                .roles("ADMIN") 
 	                .build();
 
 	        return new InMemoryUserDetailsManager(user1, admin);
